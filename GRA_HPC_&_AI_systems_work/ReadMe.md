@@ -1,3 +1,3 @@
-#H1 Graduate Research Assistant HPC & AI Systems
+# Graduate Research Assistant HPC & AI Systems
 
 
