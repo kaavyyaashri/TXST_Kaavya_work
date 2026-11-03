@@ -7,9 +7,10 @@ I supported the university's LEAP2 HPC cluster, a SLURM-managed system shared by
 ---
 
 ## At a Glance
+| | |
+|---|---|
 | **Environment** | LEAP2 cluster: SLURM scheduler, 6 partitions(`parallel`, `shared`, `himem`, `longrun`, `gpu1`, `gpu2`), 100+ compute nodes, GPU and high memory nodes |
 | **Users supported** | Researchers and students across 5+ engineering departments |
-|---|---|
 | **Tools** | Bash, SLURM(`squeue`, `sinfo`, `scontrol`, `sbatch`), `nvidia-smi`, `mpstat`, `ssh`, cron, Python, Linux |
 | **Focus** | Resource monitoring, utilization analysis, user training, technical documentation |
 
