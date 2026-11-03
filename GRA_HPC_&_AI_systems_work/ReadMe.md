@@ -30,6 +30,15 @@ Each report captures:
 |:---|:---|:---|
 |**Job summary**|`squeue`|How many jobs are running, pending, and total?|
 |**Memory overview**| `scontrol`, `show`, `node`| Total vs. allocated memory per partition (GB)|
-|core usage||
+|**Core usage**|`sinfo`|Total, allocated and idle cores|
+|**Node status**| `sinfo`|Nodes per partition by state (alloc/ Idle/ mix/ drain)|
+|**GPU and CPU utilization**| `ssh`, `nvidia-smi`, `mpstat`| Average GPU and CPU utilization per partition and shared compute nodes|
 
-   
+### How it works:
+
+1. Creates a dated output folder at 12 AM and a timestamped report file for every 4hr interval on each run.
+2. Pulls scheduler-level data (jobs, nodes, cores, memory) from SLURM.
+3. Pools each GPU node with `nvidia-smi` and each compute node with `mpstat`, then averages the results per partition.
+4. Skips drained or unreachable nodes and logs them in the report instead of failing the whole run.
+5. Stamps the end of each report with the time it finished.
+
