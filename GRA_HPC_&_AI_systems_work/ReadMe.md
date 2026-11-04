@@ -47,6 +47,8 @@ Limitation:
 1. **Sequential SSH polling is slow.** Checking every node one by one takes minutes. A parallel approach (e.g. `pdsh`/`clush`) or SLURM's own accounting data (`sacct`, `sreport`) would be faster and lighter on the cluster.
 2. **Plain-text output is hard to trend.** Writing to CSV/JSON and plotting utilization over time would make patterns visible at a glance.
 
+---
+
 ### 2. HPC workshop for new users
 
 **The problem**
@@ -64,3 +66,41 @@ I designed and delivered a hands-on workshop on running real workloads on LEAP2,
 6. **Comparing results:** how choice of approach and resource request changes run time
 
 **Why this design:** running the same job three ways made the trade-offs concrete and showed *why* resource requests matter, not only how to write them.
+
+---
+## 3. User support and documentation
+
+- Acted as the technical contact between the cluster's infrastructure and 5+ research groups, answering job-failure and resource-request questions.
+- Used monitoring data to explain *why* a job was slow or stuck (e.g. wrong partition, over-requested wall time, memory requests that blocked scheduling).
+- Turned repeated questions into **onboarding documentation** for new lab users, covering partitions, batch scripts, environment modules, and common SLURM commands, so people could self-serve.
+
+---
+
+## Impact
+
+<!-- Only include numbers you can explain if asked. Your resume says 25%. Be ready to say what was measured and how. -->
+- Gave the lab its first regular, historical view of cluster utilization (jobs, cores, memory, CPU, GPU) every 4 hours.
+- Surfaced underused GPU and compute capacity to inform infrastructure expansion discussions.
+- Reduced repeat support requests through workshop and onboarding material.
+- [Add: improvement in job scheduling accuracy and how you measured it]
+
+---
+
+## Skills demonstrated
+
+**Technical:** Linux, Bash scripting, SLURM, HPC resource management, GPU/CPU monitoring, cron scheduling, Python (serial, multi-threaded, multi-processing)
+
+**Beyond code:** turning system data into decisions, root-cause analysis, teaching technical topics to non-specialists, writing documentation people actually use
+
+---
+
+## Contents of this folder
+
+| File | Description |
+|---|---|
+| `monitor_cluster.sh` | Sanitized monitoring script |
+| `sample_report.txt` | Example 4-hour report |
+| `workshop_slides.pdf` | HPC workshop deck |
+| `ReadMe.md` | This file |
+
+*Reference: [LEAP2 Cluster User Guide](https://itrcstats2.itrc.txstate.edu/wiki/index.php?title=LEAP2_Cluster_User_Guide), Texas State University ITRC.*
