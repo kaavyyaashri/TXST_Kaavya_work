@@ -42,3 +42,25 @@ Each report captures:
 4. Skips drained or unreachable nodes and logs them in the report instead of failing the whole run.
 5. Stamps the end of each report with the time it finished.
 
+Limitation:
+
+1. **Sequential SSH polling is slow.** Checking every node one by one takes minutes. A parallel approach (e.g. `pdsh`/`clush`) or SLURM's own accounting data (`sacct`, `sreport`) would be faster and lighter on the cluster.
+2. **Plain-text output is hard to trend.** Writing to CSV/JSON and plotting utilization over time would make patterns visible at a glance.
+
+### 2. HPC workshop for new users
+
+**The problem**
+Most new users were domain researchers, not systems people. Common early stumbling blocks: running jobs on the login node, requesting the wrong partition, and not knowing how to use more than one core.
+
+**What I did**
+I designed and delivered a hands-on workshop on running real workloads on LEAP2, built around one task so the differences between approaches were easy to see.
+
+**Curriculum**
+1. **SLURM basics:** what the scheduler does, how to read a batch script (`#SBATCH` directives for partition, time, nodes, tasks, memory)
+2. **Getting data onto the cluster:** downloading a public dataset (COCO images) directly on LEAP2
+3. **Serial execution:** the baseline: one process, one core, with its SLURM script
+4. **Multi-threading:** same workload using threads
+5. **Multi-processing:** same workload spread across cores with Python's `multiprocessing`
+6. **Comparing results:** how choice of approach and resource request changes run time
+
+**Why this design:** running the same job three ways made the trade-offs concrete and showed *why* resource requests matter, not only how to write them.
