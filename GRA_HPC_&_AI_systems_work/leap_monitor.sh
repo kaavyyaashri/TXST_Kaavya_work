@@ -2,13 +2,13 @@
 source ~/.bashrc
 
 # Log file for errors
-error_log="/home/phu5/kaavya/observe_cluster/LEAP2_Utilization/leap2_reports/error_log.txt"
+error_log="LEAP2_Utilization/leap2_reports/error_log.txt"
 
 # Ensure SLURM commands are available
-export PATH=/cm/shared/apps/slurm/current/bin:$PATH
+export PATH=slurm/current/bin:$PATH
 
 # Base directory
-base_dir="/home/phu5/kaavya/observe_cluster/LEAP2_Utilization/leap2_reports"
+base_dir="LEAP2_Utilization/leap2_reports"
 
 # Create month directory
 month_dir="${base_dir}/$(date '+%Y-%m')"
