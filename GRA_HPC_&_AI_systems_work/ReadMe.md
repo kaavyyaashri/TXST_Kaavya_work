@@ -1,4 +1,4 @@
-# Graduate Research Assistant and Volunteer, HPC & AI Systems
+E# Graduate Research Assistant and Volunteer, HPC & AI Systems
 **HiPE Laboratory, Ingram School of Engineering, Texas State University | May 2024 - June 2026**
 
 ## Summary
@@ -103,4 +103,5 @@ I designed and delivered a hands-on workshop on running real workloads on LEAP2,
 | `workshop_slides.pdf` | HPC workshop deck |
 | `ReadMe.md` | This file |
 
-*Reference: [LEAP2 Cluster User Guide]([https://itrcstats2.itrc.txstate.edu/wiki/index.php?title=LEAP2_Cluster_User_Guide](https://docs.gato.txst.edu/135641/LEAP_Cluster_brief.pdf), Texas State University ITRC.*
+*Reference: 
+[LEAP2 Cluster brief](https://docs.gato.txst.edu/135641/LEAP_Cluster_brief.pdf), Texas State University ITRC.*
