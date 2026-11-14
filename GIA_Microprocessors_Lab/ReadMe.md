@@ -47,4 +47,19 @@ Students most often got stuck where hardware and software meet. My approach was 
 | **Timers and interrupts** | Stopwatch drifts or freezes | Check interval register values, that the interrupt is enabled, and that the flag is cleared |
 | **Wiring** | Intermittent behavior | Re-check pin mapping, power and ground before blaming the code |
 
+### Impact and grading
+- Graded lab reports against the course format and grading criteria.
+- Helped students write better reports by asking them to explain what the project was, what problems they hit, and what they did to fix them. A good report is a description of that process, not just the final result.
+- Students had consistent help across lab sessions, office hours and demos for four semesters, including sessions where the professor was absent.
+- When a student had a problem I could not resolve or that was not mine to decide, such as a grading dispute or an unusual situation, I took it to the professor.
+
+---
+## Skills demonstrated
+
+**Technical:** embedded C, microcontrollers (ATmega2560, ARM Cortex-A9 on Zynq), FPGA development flow in Vitis, UART, SPI, I2C, PWM, timers and interrupts, hardware and software debugging
+
+**Beyond code:** teaching across skill levels, guiding people to find problems themselves, fair assessment against criteria, coaching technical writing, knowing when to escalate
+
+---
+
 Note: The lab manuals, report template and lecture material were written by the course faculty. They are described here but not reproduced. 
