@@ -1,4 +1,4 @@
-### Graduate Research Assistant and Volunteer, HPC & AI Systems
+# Graduate Research Assistant and Volunteer, HPC & AI Systems
 **HiPE Laboratory, Ingram School of Engineering, Texas State University | May 2024 - June 2026**
 
 ## Summary
